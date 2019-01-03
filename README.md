@@ -13,7 +13,7 @@ npm install
 2. Rebuild the native modules in order they can run inside Electron:
 
 ```bash
-npm start rebuild # Note the start word!
+npm run rebuild # Don't forget the run word!
 ```
 
 Explanation: _This commands start the package.json defined script 'rebuild',
