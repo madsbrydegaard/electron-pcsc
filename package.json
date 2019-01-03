@@ -1,0 +1,17 @@
+{
+  "name": "electron.card-loader",
+  "version": "0.0.1",
+  "description": "Electron.CardLoader",
+  "main": "nfc-pcsc.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": {
+    "name": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^4.0.0",
+    "nfc-pcsc": "^0.7.0"
+  }
+}
