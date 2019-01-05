@@ -22,3 +22,4 @@ Desktop.ini
 *.log
 
 # Project's specifc
+/.vs
