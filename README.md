@@ -1,20 +1,27 @@
 # electron-pcsc
 
-When running app using 'npm start' from console on windows 10
-```
- npm ERR! code ELIFECYCLE
-npm ERR! errno 3228369023
-npm ERR! electron.card-loader@0.0.1 start: `electron .`
-npm ERR! Exit status 3228369023
-npm ERR!
-npm ERR! Failed at the electron.card-loader@0.0.1 start script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+My Electron app with nfc-pcsc
 
-npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\mads\AppData\Roaming\npm-cache\_logs\2019-01-03T08_06_05_156Z-debug.log
+## Running
+
+1. Install the dependencies:
+
+```bash
+npm install
 ```
 
-Changing "start": "electron ." to "start": "node ." in packages.json and everything works!
+2. Rebuild the native modules in order they can run inside Electron:
 
-Additional info:
-We are using Node.js 10.11.0, Chromium 69.0.3497.106, and Electron 4.0.0.
+```bash
+npm run rebuild # Don't forget the run word!
+```
+
+Explanation: _This commands start the package.json defined script 'rebuild',
+e.g. it runs `electron-rebuild -f -w nfc-pcsc`.
+See [electron-rebuild's docs](https://github.com/electron/electron-rebuild) for further explanation._
+
+3. Start the app
+
+```bash
+npm start
+```

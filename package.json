@@ -1,17 +1,36 @@
 {
-  "name": "electron.card-loader",
-  "version": "0.0.1",
-  "description": "Electron.CardLoader",
+  "name": "electron-nfc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "My Electron app with nfc-pcsc",
+  "keywords": [
+    "electron",
+    "nfc",
+    "nfc-pcsc"
+  ],
+  "homepage": "https://github.com/madsbrydegaard/electron-pcsc#readme",
+  "bugs": {
+    "url": "https://github.com/madsbrydegaard/electron-pcsc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madsbrydegaard/electron-pcsc.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Martin Endler",
+    "url": "https://github.com/pokusew"
+  },
   "main": "nfc-pcsc.js",
   "scripts": {
+    "rebuild": "electron-rebuild -f -w nfc-pcsc",
     "start": "electron ."
   },
-  "author": {
-    "name": ""
+  "dependencies": {
+    "nfc-pcsc": "^0.7.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "electron": "^4.0.0",
-    "nfc-pcsc": "^0.7.0"
+    "electron-rebuild": "^1.8.2"
   }
 }
